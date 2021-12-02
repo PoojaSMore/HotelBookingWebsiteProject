@@ -10,13 +10,35 @@
     <div class="container">
       <!-- Header div -->
       <div class="header">
-        <img src="assests/images/logo.png" alt="logo" width="150px" height="100px">
-        <a href="login.html" target="_blank">Login</a>
+        <!--Clickable logo to redirect to index.html-->
+        <a href="index.html"><img src="assests/images/logo.png" alt="logo" width="150px" height="100px"></a>
+        <a href="login.html" target="_self">Login</a>
       </div>
       <!-- Content div -->
       <div class="content">
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-        <br><a href="payment.html">Book Now</a>
+        <!-- FORM -->
+        <form class="" action="payment.html" method="GET" autocomplete="off">
+          <label for="adults-count">Adults: </label>
+          <!-- Atleast one person should be there to book so min number of adults is 1, All fields are required -->
+          <input type="number" name="adults-count" value="1" min="1" required>
+          <br>
+          <label for="name">Name: </label>
+          <input type="text" name="name" value="" required>
+          <br>
+          <label for="from-date">From Date: </label>
+          <input type="date" name="from-date" value="" required>
+          <br>
+          <label for="to-date">To Date: </label>
+          <input type="date" name="to-date" value="" required>
+          <br>
+          <label for="total-amount">Total: </label>
+          <!-- User should not be able to input the total amount, so readonly -->
+          <input type="number" name="total-amount" value="" readonly>
+          <br>
+          <button type="submit" name="button">Book Now</button>
+        </form>
+        <!-- <br><a href="payment.html">Book Now</a> -->
         <h2>Radisson Blu Hotel</h2> <p>RATINGS</p> <p>5 Star</p>
         <p>AMENITIES</p>
         <ul>
@@ -32,7 +54,7 @@
       <!-- Footer div -->
       <div class="footer">
         <!-- Contact us link -->
-        <a href="contact.html" target="_blank">Contact Us</a>
+        <a href="contact.html" target="_self">Contact Us</a>
         <!-- Social media links -->
         <div class="social-links">
           <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
