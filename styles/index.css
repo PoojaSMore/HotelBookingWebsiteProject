@@ -2,13 +2,34 @@
   width: 100%;
   height: 100%;
 }
+body{
+  margin: 0;
+  background-color: #e0e0e0;
+}
+header, footer{
+  background-color: rosybrown;
+}
 header img{
   height: 60px;
   width: 60px;
 }
+.searchbar{
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  width: 100%;
+}
+.images{
+  margin-left: 15%;
+  margin-right: 15%;
+}
 .images img{
   width: 150px;
   height: 150px;
+  border-radius: 25%;
+  padding: 4%;
 }
 .social-links img{
   width: 22px;

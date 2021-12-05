@@ -1,6 +1,19 @@
-html, body, .container{
+html, body{
  width: 100%;
  height: 100%;
+}
+
+body{
+  margin: 0;
+  background-color: #e0e0e0;
+}
+header, footer{
+  background-color: rosybrown;
+}
+.hotels{
+  margin: 2%;
+  background-color: rgb(132, 136, 139);
+  width: 40%;
 }
 header img{
  height: 60px;
