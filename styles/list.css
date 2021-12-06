@@ -1,8 +1,12 @@
 html, body{
  width: 100%;
  height: 100%;
+ font-family: 'Ubuntu';
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
 body{
   margin: 0;
   background-color: #e0e0e0;
@@ -10,10 +14,41 @@ body{
 header, footer{
   background-color: rosybrown;
 }
+/*header sticky*/
+header{
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+/*Login button*/
+header a{
+  justify: flex-end;
+  align-self: center;
+  margin-right: 2%;
+}
+/*List css*/
+ul{
+  text-align: center;
+}
+li{
+  padding: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+#list-view{
+  align-content: center;
+}
+/*Map view - no display*/
+#map-view{
+  display: none;
+}
+/*Hotel cards*/
 .hotels{
   margin: 2%;
   background-color: rgb(132, 136, 139);
   width: 40%;
+  display: inline-block;
 }
 header img{
  height: 60px;
@@ -26,4 +61,29 @@ header img{
 .social-links img{
   width: 22px;
   height: 20px;
+}
+/*Footer's everthing*/
+footer{
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 12px;
+}
+footer a{
+  align-self: center;
+  order: 1;
+}
+footer .social-links{
+  align-self: center;
+  order: 3;
+}
+footer span{
+  order: 2;
+  font-size: 10px;
+  align-self: flex-end;
+  position: relative;
+  top: 8px;
+  bottom: 1px;
 }
