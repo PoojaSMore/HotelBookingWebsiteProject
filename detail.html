@@ -16,44 +16,60 @@
         <a href="login.html" target="_self">Login</a>
       </header>
       <!-- Content - main -->
-      <main>
-        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-        <!-- FORM -->
-        <form class="" action="payment.html" method="GET" autocomplete="off">
-          <label for="adults-count">Adults: </label>
-          <!-- Atleast one person should be there to book so min number of adults is 1, All fields are required -->
-          <input type="number" name="adults-count" value="1" min="1" required>
-          <br>
-          <label for="name">Name: </label>
-          <input type="text" name="name" value="" required>
-          <br>
-          <label for="from-date">From Date: </label>
-          <input type="date" name="from-date" value="" required>
-          <br>
-          <label for="to-date">To Date: </label>
-          <input type="date" name="to-date" value="" required>
-          <br>
-          <label for="total-amount">Total: </label>
-          <!-- User should not be able to input the total amount, so readonly -->
-          <input type="number" name="total-amount" value="" readonly>
-          <br>
-          <button type="submit" name="button">Book Now</button>
-        </form>
-        <!-- <br><a href="payment.html">Book Now</a> -->
-        <div class="hotel-info">
-          <h2>Radisson Blu Hotel</h2> <p>RATINGS</p> <p>5 Star</p>
-          <p>AMENITIES</p>
-          <ul>
-            <li>Room service</li>
-            <li>Restaurant</li>
-            <li>Business center</li>
-            <li>Fitness center</li>
-            <li>Pool</li>
-          </ul>
-          <h5>DESCRIPTION</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam felis, sollicitudin in est nec, fermentum luctus mauris. Integer enim ex, faucibus vel iaculis nec, pretium sed odio. Mauris tortor lorem, aliquam quis felis et, lobortis fermentum ex.</p>
+      <div id="content">
+        <div id="hotel-Registration">
+            <div id="img-Div">
+           <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radison" id="Radison"></div>
+
+        <div id="Form-register">
+            <form action="payment.html" method="get" border=1>
+               <div class="form-element"> <label>Adults:</label>
+                <input type="number" value="1" min="1" name="numOfAdults">
+            </div>
+            <div class="form-element">
+                <label>Name:</label>
+                <input type="text" name="name" required  autocomplete="off">
+            </div>
+            <div class="form-element">
+                <label>From Date:</label>
+                <input type="date" name="fromDate" required>
+            </div>
+            <div class="form-element">
+                <label>To Date:</label>
+                <input type="date" name="toDate" required>
+            </div>
+            <div class="form-element">
+                <label>Total:</label>
+                <input type="text" name="total" name="price" readonly>
+            </div>
+            <div class="form-element">
+                <input type="submit" value="Book Now" id="button1">
+            </div>
+            </form>
         </div>
-      </main>
+    </div>
+        <p id="Description">
+            <h2>Radison Blu Hotel</h2>
+            <p><h4>RATING</h4></p>
+           <p>5 Star</p>
+            <p>
+               <h4>AMENITIES</h4>
+                <ul>
+                    <li>Room Service</li>
+                    <li>Restaurant</li>
+                    <li>Business Center</li>
+                    <li>Fitness Center</li>
+                    <li>Pool</li>
+                </ul>
+            </p>
+            <p>
+                <dl>
+                    <dt> <h4>DESCRIPTION </h4>  </dt>
+                    <dl>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nihil totam iste sunt nemo quaerat et, animi exercitationem deleniti perferendis reiciendis debitis alias sapiente doloribus tempora! Voluptatum dolore adipisci possimus!</dl>
+                </dl>
+            </p>
+        </p>
+    </div>
       <!-- Footer div -->
       <footer>
         <!-- Contact us link -->

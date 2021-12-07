@@ -1,7 +1,7 @@
  html, body{
   width: 100%;
   height: 100%;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu',sans-serif;
 }
 a{
   text-decoration: none;
@@ -10,6 +10,10 @@ a{
 body{
   margin: 0;
   background-color: #e0e0e0;
+}
+.container{
+  display: flex;
+  flex-direction: column;
 }
 header, footer{
   background-color: rosybrown;
@@ -31,7 +35,7 @@ header img{
   height: 60px;
   width: 60px;
   justify-content: flex-start;
-  align-self:
+  margin-left: 1%;
 }
 .searchbardiv{
   background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
@@ -50,25 +54,49 @@ header img{
   font-size: 16px;
   padding: 10px;
   width: 100%;
+  outline: none;
 }
 .searchbar{
   margin: auto;
 }
 .images{
-  margin-left: 15%;
-  margin-right: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4%;
 }
 .images img{
   width: 150px;
   height: 150px;
   border-radius: 25%;
-  padding: 4%;
+  box-shadow: 10px 10px 10px gray;
+}
+.image{
+  position: relative;
+  border-radius: 25%;
+}
+.imgtext{
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+.images img:hover{
+  filter: brightness(60%);
+}
+.image:hover .imgtext{
+  opacity: 1;
 }
 /*View more div centered*/
 #viewmore{
   margin: auto;
   text-align: center;
   padding-bottom: 2%;
+}
+.social-links{
+  width: 80px;
 }
 .social-links img{
   width: 22px;
@@ -81,21 +109,20 @@ footer{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 12px;
+  padding: 1%;
 }
 footer a{
   align-self: center;
   order: 1;
+  margin-left: 2%;
 }
 footer .social-links{
   align-self: center;
   order: 3;
+  margin-right: 2%;
 }
 footer span{
   order: 2;
   font-size: 10px;
-  align-self: flex-end;
-  position: relative;
-  top: 8px;
-  bottom: 1px;
+  align-self: center;
 }
