@@ -1,45 +1,6 @@
-html, body{
- width: 100%;
- height: 100%;
- font-family: 'Ubuntu',sans-serif;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
-body{
-  margin: 0;
-  background-color: #e0e0e0;
-}
-.container, .content{
- display: flex;
- flex-direction: column;
-}
-header, footer{
-  background-color: rosybrown;
-}
-header{
- display: flex;
- justify-content: space-between;
- position: sticky;
- top: 0;
-}
-/*Login button*/
-header a{
- justify: flex-end;
- align-self: center;
- margin-right: 2%;
-}
-/*Logo*/
-header img{
-  height: 60px;
-  width: 60px;
-  justify-content: flex-start;
-  margin-left: 1%;
-}
-.hotel-details{
+.hotel-details {
   width: 50%;
-  height: 20%;
+  height: 30%;
   display: flex;
   background-color: rgb(132, 136, 139);
   justify-content: space-between;
@@ -50,8 +11,9 @@ header img{
 }
 .hotel-details img{
   width: 270px;
-  height: 300px;
-  justify-content: flex-start;
+  height: 170px;
+  justify-content: center;
+  align-self: center;
 }
 .details{
   display: inline-block;
@@ -71,45 +33,26 @@ header img{
   justify-content: space-around;
 }
 /*Tariff box*/
-/* .tariff-details{
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 1% 2%;
-} */
+.tariff-details{
+  margin-top: 3%;
+}
 #paynow{
   margin-top: 5%;
 }
 b{
   font-family: cursive;
 }
-.social-links{
-  width: 80px;
-}
-.social-links img{
-  width: 22px;
-  height: 20px;
-}
-/*Footer whole*/
-footer{
-  position: sticky;
-  bottom: 0;
+.modals{
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 1%;
+  justify-content: space-around;
 }
-footer a{
+.modal-body{
+  justify-content: center;
+  align-content: center;
   align-self: center;
-  order: 1;
-  margin-left: 2%;
+  align-items: center;
 }
-footer .social-links{
-  align-self: center;
-  order: 3;
-  margin-right: 2%;
-}
-footer span{
-  order: 2;
-  font-size: 10px;
-  align-self: center;
+.modal-body button{
+  margin-top: 10%;
+  margin-left: 40%;
 }

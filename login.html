@@ -6,16 +6,29 @@
   </head>
   <body>
     <div class="container">
-        <!--FORM-->
-        <form class="" action="index.html" method="GET" autocomplete="off" target="_self">
-          <label for="username">Username: </label>
-          <input type="text" name="username" value="" placeholder="Enter Username" required>
-          <br>
-          <label for="password">Password: </label>
-          <input type="password" name="password" value="" placeholder="Enter Password" required>
-          <br>
-          <button type="submit" name="button">Login</button>
-        </form>  
+
+    <div id="example-modal" tabindex="-1" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="modal-header">
+                    <h4 class="modal-title">Please Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form class="" action="index.html" method="GET" autocomplete="off" target="_self">
+                    <label for="example-input-name">Username: </label>
+                    <input type="text" id="example-input-name" name="username" value="" class="example-input-text" placeholder="Enter Username" required>
+                    <br>
+                    <label for="example-input-password">Password: </label>
+                    <input type="password" id="example-input-password" name="password" value="" class="example-input-password" placeholder="Enter Password" required>
+                    <br>
+                    <button type="submit" name="button" class="btn btn-primary">Login</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--.container closing div tag-->
     </div>
   </body>
 </html>

@@ -1,41 +1,3 @@
-html, body{
- width: 100%;
- height: 100%;
- font-family: 'Ubuntu',sans-serif;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
-body{
-  margin: 0;
-  background-color: #e0e0e0;
-}
-.container{
-  display: flex;
-  flex-direction: column;
-}
-header, footer{
-  background-color: rosybrown;
-}
-/*header sticky*/
-header{
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-}
-/*Login button*/
-header a{
-  justify: flex-end;
-  align-self: center;
-  margin-right: 2%;
-}
-header img{
- height: 60px;
- width: 60px;
- margin-left: 1%;
-}
 #content
 {
     margin-left: 4%;
@@ -48,7 +10,6 @@ header img{
 }
 form
 {
-    margin-bottom: 1%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -67,6 +28,7 @@ form
 }
 h4
 {
+    font-size: 16px !important;
     font-family: cursive;
 }
 #hotel-Registration
@@ -80,8 +42,14 @@ h4
     max-height: 400px;
 }
 .form-element{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     vertical-align: middle;
+}
+.form-element button{
+  margin-left: 50%;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
 }
 .form-element:first-child
 {
@@ -104,34 +72,18 @@ label
     width: 150px;
     margin-left: 20px;
 }
-.social-links{
-  width: 80px;
-}
-.social-links img{
-  width: 22px;
-  height: 20px;
-}
-/*entire Footer*/
-footer{
-  position: sticky;
-  bottom: 0;
+.modals{
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 1%;
+  justify-content: space-around;
 }
-footer a{
+.modal-body{
+  justify-content: center;
+  align-content: center;
   align-self: center;
-  order: 1;
-  margin-left: 2%;
+  align-items: center;
+display: flex;
 }
-footer .social-links{
-  align-self: center;
-  order: 3;
-  margin-right: 2%;
-}
-footer span{
-  order: 2;
-  font-size: 10px;
-  align-self: center;
+.modal-body button{
+  margin-top: 10%;
+  margin-left: 40%;
 }
