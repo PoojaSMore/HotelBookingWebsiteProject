@@ -19,6 +19,7 @@ body{
  flex-direction: column;
 }header, footer{
   background-color: rosybrown;
+  z-index: 3;
 }
 header{
   display: flex;
@@ -69,4 +70,8 @@ footer span{
   order: 2;
   font-size: 10px;
   align-self: center;
+}
+/* Ratings star*/
+.checked {
+    color: orange;
 }
