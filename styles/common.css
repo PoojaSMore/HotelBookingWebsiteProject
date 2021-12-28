@@ -17,15 +17,26 @@ body{
  padding: 0 !important;
  display: flex;
  flex-direction: column;
-}header, footer{
+}
+header, footer{
   background-color: rosybrown;
-  z-index: 3;
+  z-index: 5;
+}
+my-header{
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+my-footer{
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
 }
 header{
   display: flex;
   justify-content: space-between;
-  position: sticky;
   top: 0;
+  position: sticky;
 }
 /*Login button*/
 header button{
@@ -38,6 +49,9 @@ header img{
   height: 60px;
   width: 60px;
   justify-content: flex-start;
+  margin-left: 1%;
+}
+header a{
   margin-left: 1%;
 }
 .social-links{
@@ -74,4 +88,24 @@ footer span{
 /* Ratings star*/
 .checked {
     color: orange;
+}
+
+/*Logout btn*/
+#logout{
+  display: none;
+}
+/*bootstrap modal properties edited*/
+.modals{
+  display: flex;
+  justify-content: space-around;
+}
+.modal-body{
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+.modal-body button{
+  margin-top: 10%;
+  margin-left: 40%;
 }

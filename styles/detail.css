@@ -15,6 +15,7 @@ form{
 }
 #slideshow-container{
   width: 50%;
+  z-index: 0;
 }
 .carousel-inner{
   text-align: center;
@@ -77,19 +78,4 @@ label{
     display: inline-block;
     width: 150px;
     margin-left: 20px;
-}
-.modals{
-  display: flex;
-  justify-content: space-around;
-}
-.modal-body{
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  align-items: center;
-display: flex;
-}
-.modal-body button{
-  margin-top: 10%;
-  margin-left: 40%;
 }

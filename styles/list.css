@@ -13,10 +13,7 @@ li{
 #list-view{
   align-content: center;
 }
-/*Map view - no display*/
-#map-view{
-  /* display: none; */
-}
+
 /*Hotel cards*/
 .hotels{
   margin: 2%;
@@ -36,18 +33,4 @@ li{
   height: 200px;
   width: 250px;
   float: left;
-}
-.modals{
-  display: flex;
-  justify-content: space-around;
-}
-.modal-body{
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  align-items: center;
-}
-.modal-body button{
-  margin-top: 10%;
-  margin-left: 40%;
 }

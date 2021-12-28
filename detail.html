@@ -17,13 +17,8 @@
   <body>
     <!-- Main container -->
     <div class="containerM">
-      <!-- Header div -->
-      <header>
-        <!--Clickable logo to redirect to index.html-->
-        <a href="index.html"><img src="assests/images/logo.png" alt="logo" width="150px" height="100px"></a>
-        <!-- <a href="login.html" target="_self">Login</a> -->
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal" id="login">Login</button>
-      </header>
+      <!-- Javascript template Header -->
+      <my-header></my-header>
       <!-- Content - main -->
       <div id="content">
         <div id="hotel-Registration">
@@ -57,7 +52,7 @@
         <div id="Form-register">
             <form action="payment.html" method="get" border=1>
                <div class="form-element"> <label>Adults:</label>
-                <input type="number" value="1" min="1" name="numOfAdults">
+                <input type="number" value="1" min="1" name="numOfAdults" id="numOfAdults">
             </div>
             <div class="form-element">
                 <label>Name:</label>
@@ -65,15 +60,15 @@
             </div>
             <div class="form-element">
                 <label>From Date:</label>
-                <input type="date" name="fromDate" required>
+                <input type="date" name="fromDate" required id="fromDate" value="" min="currentDate">
             </div>
             <div class="form-element">
                 <label>To Date:</label>
-                <input type="date" name="toDate" required>
+                <input type="date" name="toDate" required id="toDate" value="">
             </div>
             <div class="form-element">
                 <label>Total:</label>
-                <input type="text" name="total" name="price" readonly>
+                <input type="text" name="total" name="price" readonly id="total" value="">
             </div>
             <div class="form-element">
                 <button type="submit" class="btn btn-outline-success" id="booknow" value="Book Now">Book Now</button>
@@ -133,7 +128,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                            <button id="loginbutton" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
                         </div>
                     </div>
                 </div>
@@ -164,20 +159,10 @@
                             </div>
                         </div>
                     </div>
-      <!-- Footer div -->
-      <footer>
-        <!-- Contact us link -->
-        <!-- <a href="contact.html" target="_self">Contact Us</a> -->
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contact-modal" id="contact">Contact Us</button>
-        <!-- Social media links -->
-        <div class="social-links">
-          <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
-          <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" alt="twitter"></a>
-        </div>
-        <!--Copyright text-->
-        <span id="copyright">&copy; 2021 ROOM SEARCH PVT. LTD.</span>
-      </footer>
+      <!-- Javascript template Footer -->
+      <my-footer></my-footer>
     </div>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/detail.js"></script>
   </body>
 </html>

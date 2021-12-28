@@ -15,12 +15,8 @@
   <body>
     <!-- Main container -->
     <div class="containerM">
-      <!-- Header div -->
-      <header>
-        <a href="index.html"><img src="assests/images/logo.png" alt="logo" width="150px" height="100px"></a>
-        <!-- <a href="login.html" target="_self">Login</a> -->
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal" id="login">Login</button>
-      </header>
+      <!-- Javascript template Header -->
+      <my-header></my-header>
       <!-- Content - main -->
       <main class=".content">
         <!-- Hotel details div -->
@@ -45,7 +41,7 @@
             <p><b>Total Amount: </b>Rs.10000</p>
           </div>
           <div id="paynow">
-            <button type="button" class="btn btn-success" disabled>Pay Now</button>
+            <button type="button" class="btn btn-success" id="paynowbtn" disabled>Pay Now</button>
           </div>
         </div>
       </main>
@@ -73,7 +69,7 @@
                               </form>
                           </div>
                           <div class="modal-footer">
-                              <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                              <button id="loginbutton" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
                           </div>
                       </div>
                   </div>
@@ -104,20 +100,10 @@
                             </div>
                         </div>
                     </div>
-      <!-- Footer div -->
-      <footer>
-        <!-- Contact us link -->
-        <!-- <a href="contact.html" target="_self">Contact Us</a> -->
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contact-modal" id="contact">Contact Us</button>
-        <!-- Social media links -->
-        <div class="social-links">
-          <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
-          <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" alt="twitter"></a>
-        </div>
-        <!--Copyright text-->
-        <span id="copyright">&copy; 2021 ROOM SEARCH PVT. LTD.</span>
-      </footer>
+      <!-- Javascript template Footer -->
+      <my-footer></my-footer>
     </div>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/payment.js"></script>
   </body>
 </html>

@@ -16,13 +16,8 @@
   <body>
     <!-- Main container -->
     <div class="containerM">
-      <!-- Header div -->
-      <header>
-        <!--Clickable logo to redirect to index.html-->
-        <a href="index.html"><img src="assests/images/logo.png" alt="logo" width="150px" height="100px"></a>
-        <!-- <a href="login.html" target="_self">Login</a> -->
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal" id="login">Login</button>
-      </header>
+      <!-- Javascript template Header-->
+      <my-header></my-header>
       <ul class="nav nav-pills" id="pills-tab">
          <li class="nav-item">
             <a class="nav-link active" data-toggle="pill" href="#list-view">List View</a>
@@ -93,27 +88,6 @@
       </div>
         <!--MODAL CODE-->
         <!--Login modal-->
-        <!-- <div id="login-modal" tabindex="-1" class="modal fade modals" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header" id="modal-header">
-                        <h4 class="modal-title">Please Login</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                      <form class="" action="index.html" method="GET" autocomplete="off" target="_self">
-                        <label for="example-input-name">Username: </label>
-                        <input type="text" id="example-input-name" name="username" value="" class="example-input-text" placeholder="Enter Username" required>
-                        <br><br>
-                        <label for="example-input-password">Password: </label>
-                        <input type="password" id="example-input-password" name="password" value="" class="example-input-password" placeholder="Enter Password" required>
-                        <br>
-                        <button type="submit" name="button" class="btn btn-primary">Login</button>
-                      </form>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -136,7 +110,7 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                                <button id="loginbutton" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
                             </div>
                         </div>
                     </div>
@@ -167,20 +141,10 @@
                             </div>
                         </div>
                     </div>
-      <!-- Footer div -->
-      <footer>
-        <!-- Contact us link -->
-        <!-- <a href="contact.html" target="_self">Contact Us</a> -->
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contact-modal" id="contact">Contact Us</button>
-        <!-- Social media links -->
-        <div class="social-links">
-          <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
-          <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" alt="twitter"></a>
-        </div>
-        <!--Copyright text-->
-        <span id="copyright">&copy; 2021 ROOM SEARCH PVT. LTD.</span>
-      </footer>
+      <!-- Javascript template Footer -->
+      <my-footer></my-footer>
     </div>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/list.js"></script>
   </body>
 </html>

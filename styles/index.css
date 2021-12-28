@@ -1,17 +1,4 @@
-.modals{
-  display: flex;
-  justify-content: space-around;
-}
-.modal-body{
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  align-items: center;
-}
-.modal-body button{
-  margin-top: 10%;
-  margin-left: 40%;
-}
+
 .searchbardiv{
   background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
   background-repeat: no-repeat;
@@ -34,6 +21,7 @@
 .searchbar{
   margin: auto;
 }
+/* City options css*/
 .images{
   display: flex;
   align-items: center;
@@ -69,4 +57,15 @@
   margin: auto;
   text-align: center;
   padding-bottom: 2%;
+}
+#viewlesslink, #images-div-2{
+  display: none;
+}
+#viewless{
+  margin: auto;
+  text-align: center;
+  padding-bottom: 2%;
+}
+#viewmore, #viewless{
+  color: white;
 }
